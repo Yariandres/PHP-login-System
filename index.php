@@ -3,8 +3,13 @@
 ?>
 
   <main>
-    
-     <h1>The main content of the site!</h1>
+    <?php
+      if (isset($_SESSION['userId'])) {
+        echo '<p>You are logged in!</p>';
+      } else {
+        echo '<p>You are logged out!</p>';
+      }
+    ?>   
  
   </main>
 
