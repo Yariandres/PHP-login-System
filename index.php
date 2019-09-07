@@ -20,13 +20,10 @@ $page_title = "index page";
 
                   <a href="facebookScript.php" class="btn btn-outline-primary my-2">Facebook Ads</a>
                 </section>';
-        } else {
-          
-          require "landing.php";
-          
+        } else {          
+          require "landing.php";        
         }
-      ?>    
-
+      ?>
     </div>
   </main>
 <div>

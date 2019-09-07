@@ -1,5 +1,5 @@
 <?php
-$page_title = "Amazon Listing Script";
+  $page_title = "Amazon Listing Generator";
   require "header.php";
 ?>
 
