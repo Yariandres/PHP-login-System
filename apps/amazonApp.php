@@ -4,7 +4,7 @@
     <h1 class="text-center mt-5 listing-app"> BOOM! - Lets get started!</h1>
   </div>
 
-  <form class="shadow-sm p-5 rounded" action="" method="post">
+  <form class="shadow-sm p-5 rounded" action="" id="listingForm" method="post">
 
   <!-- ABOUT THE PRODUCT -->
   <h2 class="my-4 lead">About The Product</h2>
@@ -182,15 +182,45 @@
       </div>
     </div>
       <hr>
-    <button type="submit" name="listing-submit" class="btn btn-outline-primary">Generate</button>
+    <input type="submit" name="listing-submit" class="btn btn-outline-primary" value="Generate"/>
 
     <button type="submit" class="btn btn-outline-secondary">save</button>
     <button type="submit" class="btn btn-outline-success">Start Again</button>    
-  </form>  
+  </form>
 </section>
 
-<?php>
-  if (isset($_POST['listing-submit'])) {
-    
-    $question1 = $_POST['q1'];
+<section class="form-results">
+  <div class="container">
+  <?php
+    // if (isset($_POST['listing-submit'])) {
+
+    //   if(!empty($_REQUEST['q1'])) {
+    //     $q1 = $_REQUEST['q1'];    
+    //     echo $q1;
+  
+    //   } else {
+    //     echo "question 1 has no value";
+    //   }
+    // }
+
+    if (isset($_POST['q1'])) {
+      echo $_POST['q1'];
+    }
+     
+  ?>
+  </div>
+</section>
+
+<!-- <script>
+  preventFormreload = (event) => {
+    event.preventDefault();
   }
+
+  var form = document.querySelector('#listingForm');
+
+  form.addEventListener("submit", preventFormreload, true);
+  
+</script> -->
+
+
+
