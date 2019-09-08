@@ -5,7 +5,6 @@ $page_title = "index page";
 
 <div class="container">
   <main role="main" class="main-section text-center">
-    <div class="jumbotron">
       <?php
         if (isset($_SESSION['userId'])) {
           echo '<section class=" text-center mt-5">
@@ -14,17 +13,14 @@ $page_title = "index page";
                     <p class="lead text-muted">Choose your script platform below</p>
                     <p>              
                     </p>
-                  </div>
-                  
+                  </div>                  
                   <a href="amazonScript.php" class="btn btn-outline-warning my-2">Amazon Listing</a>
-
                   <a href="facebookScript.php" class="btn btn-outline-primary my-2">Facebook Ads</a>
                 </section>';
         } else {          
           require "landing.php";        
         }
       ?>
-    </div>
   </main>
 <div>
 

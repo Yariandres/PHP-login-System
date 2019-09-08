@@ -4,7 +4,8 @@
     <h1 class="text-center mt-5 listing-app"> BOOM! - Lets get started!</h1>
   </div>
 
-  <form method="post">
+  <form class="shadow-sm p-5 rounded" action="" method="post">
+
   <!-- ABOUT THE PRODUCT -->
   <h2 class="my-4 lead">About The Product</h2>
 
@@ -181,9 +182,15 @@
       </div>
     </div>
       <hr>
-    <button type="submit" class="btn btn-outline-primary">Generate</button>
+    <button type="submit" name="listing-submit" class="btn btn-outline-primary">Generate</button>
+
     <button type="submit" class="btn btn-outline-secondary">save</button>
     <button type="submit" class="btn btn-outline-success">Start Again</button>    
-  </form>
-  
+  </form>  
 </section>
+
+<?php>
+  if (isset($_POST['listing-submit'])) {
+    
+    $question1 = $_POST['q1'];
+  }

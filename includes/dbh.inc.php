@@ -1,6 +1,5 @@
 <!-- database handler -->
 <?php 
-
 // server name
 $servername = "localhost";
 

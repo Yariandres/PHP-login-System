@@ -1,5 +1,9 @@
-/* bootstrap sign in  */
+/* AMAZON LISTING APP STYLES */
+.amz-app {
+  margin-top: 50px;
+}
 
+/* bootstrap form  */
 .form-signin {
   background-color: #f5f5f5;
   width: 100%;
@@ -45,6 +49,9 @@
 }
 
 /* AMAZON LISTING GENERATOR */
+.pink {
+  color: blueviolet !important;
+}
 
 .section-footer {
   margin-top: 60px;
