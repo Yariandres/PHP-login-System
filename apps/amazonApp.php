@@ -48,7 +48,7 @@
     <h2 class="my-4">Keyword Theme</h2>
 
     <div class="form-group row">
-      <label for="q5" class="col-sm-6 col-form-label">Q5: In 2 to 3 words: What are the main area of focus for this product (ex: Cook faster - Helps you relax - Save from smashing)</label>
+      <label for="q5" class="col-sm-6 col-form-label">Q5: In 2 to 3 words: What are the main area of focus for this product (ex: Cook faster - Helps you relax - Iphone protection)</label>
       <div class="col-sm-6">
         <input type="text" class="form-control" name="q5" id="q5" placeholder="Ex: Save from smashing...">
       </div>
@@ -202,7 +202,7 @@
                 // question 1
                 if(!empty($_REQUEST['q1'])) {
                   $q1 = $_REQUEST['q1'];    
-                  echo '<a href="#q1" class="list-group-item list-group-item-action list-group-item-primary"> Q1: '.$q1.'</a>';
+                  echo '<a href="#q1" class="list-group-item list-group-item-action list-group-item-primary"> Q1 <strong>Name of the product: </strong> '.$q1.'</a>';
             
                 } else {
                   echo '<a href="#q1" class="list-group-item list-group-item-action list-group-item-warning">
@@ -213,7 +213,7 @@
                 // question 2
                 if(!empty($_REQUEST['q2'])) {
                   $q2 = $_REQUEST['q2'];    
-                  echo '<a href="#q2" class="list-group-item list-group-item-action list-group-item-primary">Q2: '.$q2.'</a>';
+                  echo '<a href="#q2" class="list-group-item list-group-item-action list-group-item-primary">Q2 <strong> TYPE of product: </strong> '.$q2.'</a>';
             
                 } else {
                   echo '<a href="#q2" class="list-group-item list-group-item-action list-group-item-warning">Q2 has no input, click here to go there</a>';
@@ -222,7 +222,7 @@
                 // question 3
                 if(!empty($_REQUEST['q3'])) {
                   $q3 = $_REQUEST['q3'];    
-                  echo '<a href="#q3" class="list-group-item list-group-item-action list-group-item-primary">Q3: '.$q3.'</a>';
+                  echo '<a href="#q3" class="list-group-item list-group-item-action list-group-item-primary">Q3 <strong>Target Audience (SINGULAR): </strong> '.$q3.'</a>';
             
                 } else {
                   echo '<a href="#q3" class="list-group-item list-group-item-action list-group-item-warning">Q3 has no input, click here to go there</a>';
@@ -231,7 +231,7 @@
                 // question 4
                 if(!empty($_REQUEST['q4'])) {
                   $q4 = $_REQUEST['q4'];    
-                  echo '<a href="#q4" class="list-group-item list-group-item-action list-group-item-primary">Q4: '.$q3.'</a>';
+                  echo '<a href="#q4" class="list-group-item list-group-item-action list-group-item-primary">Q4 <strong>Target Audience (PLURAR): </strong> '.$q3.'</a>';
             
                 } else {
                   echo '<a href="#q4" class="list-group-item list-group-item-action list-group-item-warning">Q4 has no input, click here to go there</a>';
@@ -240,7 +240,7 @@
                 // question 5
                 if(!empty($_REQUEST['q5'])) {
                   $q5 = $_REQUEST['q5'];    
-                  echo '<a href="#q5" class="list-group-item list-group-item-action list-group-item-primary">Q5: '.$q5.'</a>';
+                  echo '<a href="#q5" class="list-group-item list-group-item-action list-group-item-primary">Q5 <strong>Keyword Theme : </strong> '.$q5.'</a>';
             
                 } else {
                   echo '<a href="#q5" class="list-group-item list-group-item-action list-group-item-warning">Q5 has no input, click here to go there</a>';
@@ -249,7 +249,7 @@
                 // question 6
                 if(!empty($_REQUEST['q6'])) {
                   $q6 = $_REQUEST['q6'];    
-                  echo '<a href="#q6" class="list-group-item list-group-item-action list-group-item-primary">Q6: '.$q6.'</a>';
+                  echo '<a href="#q6" class="list-group-item list-group-item-action list-group-item-primary">Q6 <strong>How does this help your target audience : </strong>  '.$q6.'</a>';
             
                 } else {
                   echo '<a href="#q6" class="list-group-item list-group-item-action list-group-item-warning">Q6 has no input, click here to go there</a>';
@@ -258,7 +258,7 @@
                 // question 7
                 if(!empty($_REQUEST['q7'])) {
                   $q7 = $_REQUEST['q7'];    
-                  echo '<a href="#q7" class="list-group-item list-group-item-action list-group-item-primary">Q7: '.$q7.'</a>';
+                  echo '<a href="#q7" class="list-group-item list-group-item-action list-group-item-primary">Q7 <strong>#1 BIG payoff / big benefit : </strong> '.$q7.'</a>';
             
                 } else {
                   echo '<a href="#q7" class="list-group-item list-group-item-action list-group-item-warning">Q7 has no input, click here to go there</a>';
@@ -267,7 +267,7 @@
                 // question 8
                 if(!empty($_REQUEST['q8'])) {
                   $q8 = $_REQUEST['q8'];    
-                  echo '<a href="#q8" class="list-group-item list-group-item-action list-group-item-primary">Q8: '.$q8.'</a>';
+                  echo '<a href="#q8" class="list-group-item list-group-item-action list-group-item-primary">Q8 <strong>Customers main pressing need? : </strong> '.$q8.'</a>';
             
                 } else {
                   echo '<a href="#q8" class="list-group-item list-group-item-action list-group-item-warning">Q8 has no input, click here to go there</a>';
@@ -276,7 +276,7 @@
                 // question 9
                 if(!empty($_REQUEST['q9'])) {
                   $q9 = $_REQUEST['q9'];    
-                  echo '<a href="#q9" class="list-group-item list-group-item-action list-group-item-primary">Q9: '.$q9.'</a>';
+                  echo '<a href="#q9" class="list-group-item list-group-item-action list-group-item-primary">Q9 <strong>NEGATIVE person, thing or circumstance (Hurdle)  : </strong> '.$q9.'</a>';
             
                 } else {
                   echo '<a href="#q9" class="list-group-item list-group-item-action list-group-item-warning">Q9 has no input, click here to go there</a>';
@@ -285,7 +285,7 @@
                 // question 10
                 if(!empty($_REQUEST['q10'])) {
                   $q10 = $_REQUEST['q10'];    
-                  echo '<a href="#q10" class="list-group-item list-group-item-action list-group-item-primary">Q10: '.$q10.'</a>';
+                  echo '<a href="#q10" class="list-group-item list-group-item-action list-group-item-primary">Q10 <strong>WHY this hurdle is such a big deal  : </strong> '.$q10.'</a>';
             
                 } else {
                   echo '<a href="#q10" class="list-group-item list-group-item-action list-group-item-warning">Q10 has no input, click here to go there</a>';
