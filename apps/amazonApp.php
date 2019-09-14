@@ -4,22 +4,18 @@
     <h1 class="text-center mt-5 listing-app"> BOOM! - Lets get started!</h1>
   </div>
 
-  <form class="shadow-sm p-5 rounded" action="" id="listingForm" method="post">
-
+  <form class="shadow-sm p-5 rounded" action="" id="listingForm" method="POST">
   <!-- ABOUT THE PRODUCT -->
   <h2 class="my-4">About The Product</h2>
-
     <div class="form-group row">
-      <label for="q1" class="col-sm-6 col-form-label">Q1: Name of the product: (Include the name brand last) 1. What is the name of the product your
-        are selling. 2. Start with the main keyword. (Ex: Kitchen Wooden Spoon 6 set - Cotton Flight Pillow - Iphone Cover)</label>
+      <label for="q1" class="col-sm-6 col-form-label"><strong>Q1: Name of the product: (Include the name brand last) 1. What is the name of the product your are selling. 2. Start with the main keyword.</strong><br>(Ex: Kitchen Wooden Spoon 6 set - Cotton Flight Pillow - Iphone Cover)</label>
       <div class="col-sm-6">
         <input type="text" class="form-control" name="q1" id="q1" placeholder="Ex: Iphone Cover By Icare LTD">
       </div>
     </div>
 
     <div class="form-group row mb-4">
-      <label for="q2" class="col-sm-6 col-form-label">Q2: Type of product: What exactly are you selling.<br> (ex: Wooden Spoons - Flight Pillow - Phone
-        Cover)</label>
+      <label for="q2" class="col-sm-6 col-form-label"><strong>Q2: Type of product: What exactly are you selling.</strong><br>(ex: Wooden Spoons - Flight Pillow - Phone Cover)</label>
       <div class="col-sm-6">
         <input type="text" class="form-control" name="q2" id="q2" placeholder="Ex: Phone Cover">
       </div>
@@ -27,9 +23,8 @@
     <hr>
     <!-- TARGET AUDIENCE -->
     <h2 class="my-4">Target Audience</h2>
-
     <div class="form-group row">
-      <label for="q3" class="col-sm-6 col-form-label">Q3: Target Audience for this product: (Singular Word)<br> (ex: A Chef - Executive - Iphone Owner)</label>
+      <label for="q3" class="col-sm-6 col-form-label"><strong>Q3: Target Audience for this product: (Singular Word)</strong><br> (ex: A Chef - Executive - Iphone Owner)</label>
       <div class="col-sm-6">
         <input type="text" class="form-control" name="q3" id="q3" placeholder="Ex: Iphone Owner">
       </div>
@@ -46,7 +41,6 @@
     <hr>
     <!-- KEYWORD THEME -->
     <h2 class="my-4">Keyword Theme</h2>
-
     <div class="form-group row">
       <label for="q5" class="col-sm-6 col-form-label">Q5: In 2 to 3 words: What are the main area of focus for this product (ex: Cook faster - Helps you relax - Iphone protection)</label>
       <div class="col-sm-6">
@@ -64,7 +58,6 @@
     <hr>
     <!-- BIG PAY OFF -->
     <h2 class="my-4">Big Pay Off</h2>
-
     <div class="form-group row">
       <label for="q7" class="col-sm-6 col-form-label">Q7: What is the big pay off / Big benefit of the product audience:<br><small>"With this amazing product you will finally be able to ........ (Verb word)" (ex: Cook to perfection everytime - Relax on journeys - Protect your phone everyday)</small></label>
       <div class="col-sm-6">
@@ -114,8 +107,7 @@
     </div>
 
     <hr> 
-    <h2 class="my-4">Features and Benefits</h2>
-      <!-- one -->
+    <h2 class="my-4">Features and Benefits</h2>      <!-- one -->
       <div class="form-group row">
       <label for="q13" class="col-sm-6 col-form-label">Q13: What is #1 feature (what it is) of your product?<br><small> (ex: Soft silicon grip
         ergonomic handle that you can use at high tempetures - 100% cotton - liquid silicone)</small></label>
@@ -183,7 +175,6 @@
     </div>
       <hr>
     <input type="submit" name="listing-submit" class="btn btn-outline-primary" value="Generate"/>
-
     <button type="submit" class="btn btn-outline-secondary">save</button>
     <button type="submit" class="btn btn-outline-success">Start Again</button>    
   </form>
@@ -301,7 +292,7 @@
                 // question 11
                 if(!empty($_REQUEST['q11'])) {
                   $q11 = $_REQUEST['q11'];    
-                  echo '<a href="#q11" class="list-group-item list-group-item-action list-group-item-primary"> Q11: '.$q11.'</a>';
+                  echo '<a href="#q11" class="list-group-item list-group-item-action list-group-item-primary"> Q11 <strong>HOW does this hurdle hurt them from getting results they want?</strong> '.$q11.'</a>';
             
                 } else {
                   echo '<a href="#q11" class="list-group-item list-group-item-action list-group-item-warning">
@@ -312,7 +303,7 @@
                 // question 12
                 if(!empty($_REQUEST['q12'])) {
                   $q12 = $_REQUEST['q12'];    
-                  echo '<a href="#q12" class="list-group-item list-group-item-action list-group-item-primary">Q12: '.$q12.'</a>';
+                  echo '<a href="#q12" class="list-group-item list-group-item-action list-group-item-primary">Q12 <strong>Whats an idea your target audience believes to be true, but is actually completly WRONG?</strong> '.$q12.'</a>';
             
                 } else {
                   echo '<a href="#q12" class="list-group-item list-group-item-action list-group-item-warning">Q12 has no input, click here to go there</a>';
@@ -321,7 +312,7 @@
                 // question 13
                 if(!empty($_REQUEST['q13'])) {
                   $q13 = $_REQUEST['q13'];    
-                  echo '<a href="#q13" class="list-group-item list-group-item-action list-group-item-primary">Q13: '.$q13.'</a>';
+                  echo '<a href="#q13" class="list-group-item list-group-item-action list-group-item-primary">Q13 <strong>#1 FEATURE:</strong> '.$q13.'</a>';
             
                 } else {
                   echo '<a href="#q13" class="list-group-item list-group-item-action list-group-item-warning">Q13 has no input, click here to go there</a>';
@@ -330,7 +321,7 @@
                 // question 14
                 if(!empty($_REQUEST['q14'])) {
                   $q14 = $_REQUEST['q14'];    
-                  echo '<a href="#q14" class="list-group-item list-group-item-action list-group-item-primary">Q14: '.$q14.'</a>';
+                  echo '<a href="#q14" class="list-group-item list-group-item-action list-group-item-primary">Q14 <strong>BENEFIT:</strong> '.$q14.'</a>';
             
                 } else {
                   echo '<a href="#q14" class="list-group-item list-group-item-action list-group-item-warning">Q14 has no input, click here to go there</a>';
@@ -339,7 +330,7 @@
                 // question 15
                 if(!empty($_REQUEST['q15'])) {
                   $q15 = $_REQUEST['q15'];    
-                  echo '<a href="#q15" class="list-group-item list-group-item-action list-group-item-primary">Q15: '.$q15.'</a>';
+                  echo '<a href="#q15" class="list-group-item list-group-item-action list-group-item-primary">Q15 <strong>#2 FEATURE:</strong> '.$q15.'</a>';
             
                 } else {
                   echo '<a href="#q15" class="list-group-item list-group-item-action list-group-item-warning">Q15 has no input, click here to go there</a>';
@@ -348,7 +339,7 @@
                 // question 16
                 if(!empty($_REQUEST['q16'])) {
                   $q16 = $_REQUEST['q16'];    
-                  echo '<a href="#q16" class="list-group-item list-group-item-action list-group-item-primary">Q16: '.$q16.'</a>';
+                  echo '<a href="#q16" class="list-group-item list-group-item-action list-group-item-primary">Q16 <strong>BENEFIT:</strong> '.$q16.'</a>';
             
                 } else {
                   echo '<a href="#q16" class="list-group-item list-group-item-action list-group-item-warning">Q16 has no input, click here to go there</a>';
@@ -357,7 +348,7 @@
                 // question 7
                 if(!empty($_REQUEST['q17'])) {
                   $q17 = $_REQUEST['q17'];    
-                  echo '<a href="#q17" class="list-group-item list-group-item-action list-group-item-primary">Q17: '.$q17.'</a>';
+                  echo '<a href="#q17" class="list-group-item list-group-item-action list-group-item-primary">Q17 <strong>#3 FEATURE:</strong> '.$q17.'</a>';
             
                 } else {
                   echo '<a href="#q17" class="list-group-item list-group-item-action list-group-item-warning">Q17 has no input, click here to go there</a>';
@@ -366,7 +357,7 @@
                 // question 18
                 if(!empty($_REQUEST['q18'])) {
                   $q18 = $_REQUEST['q18'];    
-                  echo '<a href="#q18" class="list-group-item list-group-item-action list-group-item-primary">Q18: '.$q18.'</a>';
+                  echo '<a href="#q18" class="list-group-item list-group-item-action list-group-item-primary">Q18 <strong>BENEFIT:</strong> '.$q18.'</a>';
             
                 } else {
                   echo '<a href="#q18" class="list-group-item list-group-item-action list-group-item-warning">Q18 has no input, click here to go there</a>';
@@ -375,7 +366,7 @@
                 // question 19
                 if(!empty($_REQUEST['q19'])) {
                   $q19 = $_REQUEST['q19'];    
-                  echo '<a href="#q19" class="list-group-item list-group-item-action list-group-item-primary">Q19: '.$q19.'</a>';
+                  echo '<a href="#q19" class="list-group-item list-group-item-action list-group-item-primary">Q19 <strong>#4 FEATURE:</strong> '.$q19.'</a>';
             
                 } else {
                   echo '<a href="#q19" class="list-group-item list-group-item-action list-group-item-warning">Q19 has no input, click here to go there</a>';
@@ -384,7 +375,7 @@
                 // question 20
                 if(!empty($_REQUEST['q20'])) {
                   $q20 = $_REQUEST['q20'];    
-                  echo '<a href="#q20" class="list-group-item list-group-item-action list-group-item-primary">Q20: '.$q20.'</a>';
+                  echo '<a href="#q20" class="list-group-item list-group-item-action list-group-item-primary">Q20 <strong>BENEFIT:</strong> '.$q20.'</a>';
             
                 } else {
                   echo '<a href="#q20" class="list-group-item list-group-item-action list-group-item-warning">Q20 has no input, click here to go there</a>';
@@ -398,16 +389,51 @@
   </div>
 </section>
 
-<!-- <script>
-  preventFormreload = (event) => {
-    event.preventDefault();
-  }
+<!-- BULLET TITTLE -->
+<section class="title-result">
+  <div class="container rounded">
+    <div class="shadow-sm p-5">
+        <h2 class="my-5">The title</h2>
 
-  var form = document.querySelector('#listingForm');
+        <?php
+          if (isset($_POST['listing-submit'])) {
 
-  form.addEventListener("submit", preventFormreload, true);
-  
-</script> -->
+            if(!empty($_REQUEST['q1'])) {
+              $q11 = $_REQUEST['q1'];    
+              echo '<h4><strong>' . $q1 .' - ' . $q2 . ' - ' . $q5 .' '. $q7 . ' '. $q17 . ' ' . $q19 . ' ' . $q20 . '</strong></h4>';
+        
+            } else {
+              echo '<a href="#q1" class="list-group-item list-group-item-action list-group-item-warning">
+                      Q1 has no input, click here to go there
+                    </a>';
+            }
+          }
+        ?>
+    </div>    
+  </div>
+
+  <!-- BULLET POINTS -->
+  <div class="container rounded">
+    <div class="shadow-sm p-5">
+      <h2 class="my-5">The bullet points</h2>
+
+      <?php
+        if (isset($_POST['listing-submit'])) {
+
+          if(!empty($_REQUEST['q1'])) {
+            $q11 = $_REQUEST['q1'];    
+            echo '<h4 class="bullet-title"><strong>a cut above the rest! </strong><span id="bullet-text"> ' . $q13 . ' anables you to ' . $q14 . '</span></h4>';
+      
+          } else {
+            echo '<a href="#q1" class="list-group-item list-group-item-action list-group-item-warning">
+                    Q1 has no input, click here to go there
+                  </a>';
+          }
+        }
+      ?>
+    </div>
+  </div>  
+</section>
 
 
 

@@ -1,6 +1,25 @@
-/* AMAZON LISTING APP STYLES */
-.amz-app {
-  margin-top: 50px;
+/* AMAZONAPP */
+.bullet-title {
+  text-transform: uppercase;
+}
+
+#bullet-text {
+  text-transform: lowercase;
+}
+
+.section-footer {
+  margin-top: 60px;
+}
+
+/* AMAZON LISTING LANDING PAGE */
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
 }
 
 /* bootstrap form  */
@@ -48,23 +67,6 @@
   margin-top: 60px;
 }
 
-
-
-/* AMAZON LISTING GENERATOR */
-.section-footer {
-  margin-top: 60px;
-}
-
-/* AMAZON LISTING LANDING PAGE */
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
-}
 
 
 /* CUSTOMIZE THE CAROUSEL
