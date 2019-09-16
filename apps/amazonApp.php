@@ -186,7 +186,7 @@
     <h2 class="mb-4">Final steps: Browse through the results below, edit and use where is nessesary</h2>
       <div class="list-group">
         <div class="row">
-          <div class="col-4">
+          <div class="col-sm-12 col-md-6">
             <?php
               if (isset($_POST['listing-submit'])) {
                 
@@ -285,7 +285,7 @@
             ?>
           </div>
 
-          <div class="col-4">
+          <div class="col-sm-12 col-md-6">
             <?php
               if (isset($_POST['listing-submit'])) {
                 
@@ -393,39 +393,64 @@
 <section class="title-result">
   <div class="container rounded">
     <div class="shadow-sm p-5">
-        <h2 class="my-5">The title</h2>
+      <?php
+        if (isset($_POST['listing-submit'])) {
+          echo '<h2 class="my-5">The title</h2>';
 
-        <?php
-          if (isset($_POST['listing-submit'])) {
-
-            if(!empty($_REQUEST['q1'])) {
-              $q11 = $_REQUEST['q1'];    
-              echo '<h4><strong>' . $q1 .' - ' . $q2 . ' - ' . $q5 .' '. $q7 . ' '. $q17 . ' ' . $q19 . ' ' . $q20 . '</strong></h4>';
-        
-            } else {
-              echo '<a href="#q1" class="list-group-item list-group-item-action list-group-item-warning">
-                      Q1 has no input, click here to go there
-                    </a>';
-            }
+          if(!empty($_REQUEST['q1'])) {
+            $q11 = $_REQUEST['q1'];    
+            echo '<h4><strong>' . $q1 .' - ' . $q2 . ' - ' . $q5 .' '. $q13 . ' '. $q14 . ' ' . $q15 . ' ' . $q16 . ' ' . $q17 . '</strong></h4>';
+      
+          } else {
+            echo '<a href="#q1" class="list-group-item list-group-item-action list-group-item-warning">
+                    Q1 has no input, click here to go there
+                  </a>';
           }
-        ?>
+        }
+      ?>
     </div>    
   </div>
 
   <!-- BULLET POINTS -->
   <div class="container rounded">
     <div class="shadow-sm p-5">
-      <h2 class="my-5">The bullet points</h2>
-
       <?php
-        if (isset($_POST['listing-submit'])) {
 
-          if(!empty($_REQUEST['q1'])) {
-            $q11 = $_REQUEST['q1'];    
-            echo '<h4 class="bullet-title"><strong>a cut above the rest! </strong><span id="bullet-text"> ' . $q13 . ' anables you to ' . $q14 . '</span></h4>';
+        if (isset($_POST['listing-submit'])) {
+          echo '<h2 class="my-5">The bullet points</h2>';
+
+          if(!empty($_REQUEST['q13']) && !empty($_REQUEST['q14'])) {             
+            echo '<h4 class="bullet-title"><strong>Prim and Posh! -</strong><span id="bullet-text"> ' . $q13 . '<strong> which means </strong> ' . $q14 . '<strong> - safe</strong></span></h4>';
       
           } else {
-            echo '<a href="#q1" class="list-group-item list-group-item-action list-group-item-warning">
+            echo '<a href="#q13" class="list-group-item list-group-item-action list-group-item-warning">
+                    Q1 has no input, click here to go there
+                  </a>';
+          }
+
+          if(!empty($_REQUEST['q15']) && !empty($_REQUEST['q16'])) {             
+            echo '<h4 class="bullet-title mt-5"><strong>High quality! -</strong><span id="bullet-text"> ' . $q15 . '<strong> which means </strong> ' . $q16 . '<strong> - easily</strong></span></h4>';
+      
+          } else {
+            echo '<a href="#q14" class="list-group-item list-group-item-action list-group-item-warning">
+                    Q1 has no input, click here to go there
+                  </a>';
+          }
+
+          if(!empty($_REQUEST['q17']) && !empty($_REQUEST['q18'])) {             
+            echo '<h4 class="bullet-title mt-5"><strong>Extremely reliable! -</strong><span id="bullet-text"> ' . $q17 . '<strong> which means </strong> ' . $q18 . '<strong> - helpful</strong></span></h4>';
+      
+          } else {
+            echo '<a href="#q17" class="list-group-item list-group-item-action list-group-item-warning">
+                    Q1 has no input, click here to go there
+                  </a>';
+          }
+
+          if(!empty($_REQUEST['q18']) && !empty($_REQUEST['q19'])) {             
+            echo '<h4 class="bullet-title mt-5"><strong>always Captivating! -</strong><span id="bullet-text"> ' . $q19 . '<strong> which means</strong> ' . $q20 . '<strong> - Delightful</strong></span></h4>';
+      
+          } else {
+            echo '<a href="#q18" class="list-group-item list-group-item-action list-group-item-warning">
                     Q1 has no input, click here to go there
                   </a>';
           }
@@ -435,5 +460,13 @@
   </div>  
 </section>
 
+ <!-- DESCRIPTION -->
+ <section class="section-description">
+  <div class="container rounded">
+    <div class="shadow-sm p-5">
+    <h2>Description</h2>
+    </div>
+  </div>
+ </section>
 
 
