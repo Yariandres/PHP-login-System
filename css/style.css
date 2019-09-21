@@ -22,6 +22,10 @@ body {
   color: #5a5a5a;
 }
 
+li {
+  list-style: none;
+}
+
 /* bootstrap form  */
 .form-signin {
   background-color: #f5f5f5;
