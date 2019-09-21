@@ -15,6 +15,17 @@
 
     </div>  
   </div>
+  <?php
+    $input1 = '';
+    $input2 = '';
+
+    if(isset($_POST['listing-submit'])) {
+      $input1 = $_POST['q1'];
+      $input2 = $_POST['q2'];
+    
+      //Process further
+    }
+  ?>
   <!-- FORM  -->
   <form class="rounded" action="" id="listingForm" method="POST">
   <!-- ABOUT THE PRODUCT -->
@@ -22,14 +33,14 @@
     <div class="form-group row">
       <label for="q1" class="col-sm-6 col-form-label"><strong>Q1: Name of the product: (Include the name brand last) 1. What is the name of the product your are selling. 2. Start with the main keyword.</strong><br>(Ex: Kitchen Wooden Spoon 6 set - Cotton Flight Pillow - Iphone Cover)</label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q1" id="q1" placeholder="Ex: Iphone Cover By Icare LTD">
+        <input type="text" class="form-control" name="q1" id="q1" value="<?php echo $input1; ?>" placeholder="Kitchen Wooden Spoon 6 set">
       </div>
     </div>
 
     <div class="form-group row mb-4">
       <label for="q2" class="col-sm-6 col-form-label"><strong>Q2: Type of product: What exactly are you selling.</strong><br>(ex: Wooden Spoons - Flight Pillow - Phone Cover)</label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q2" id="q2" placeholder="Ex: Phone Cover">
+        <input type="text" class="form-control" name="q2" id="q2" value="<?php echo $input2; ?>" placeholder="Wooden Spoons">
       </div>
     </div>
     <hr>
@@ -38,7 +49,7 @@
     <div class="form-group row">
       <label for="q3" class="col-sm-6 col-form-label"><strong>Q3: Target Audience for this product: (Singular Word)</strong><br> (ex: A Chef - Executive - Iphone Owner)</label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q3" id="q3" placeholder="Ex: Iphone Owner">
+        <input type="text" class="form-control" name="q3" id="q3" placeholder=" Iphone Owner">
       </div>
     </div>
 
@@ -46,7 +57,7 @@
       <label for="q4" class="col-sm-6 col-form-label">Q4: Target Audience for this product: (Plural Word) "........ are the target audience" (ex:
         Chefs - Executives - Iphone Owners)</label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q4" id="q4" placeholder="Ex: Iphone Owners">
+        <input type="text" class="form-control" name="q4" id="q4" placeholder=" Iphone Owners">
       </div>
     </div>
 
@@ -56,14 +67,14 @@
     <div class="form-group row">
       <label for="q5" class="col-sm-6 col-form-label">Q5: In 2 to 3 words: What are the main area of focus for this product (ex: Cook faster - Helps you relax - Iphone protection)</label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q5" id="q5" placeholder="Ex: Save from smashing...">
+        <input type="text" class="form-control" name="q5" id="q5" placeholder=" Save from smashing...">
       </div>
     </div>
 
     <div class="form-group row">
       <label for="q6" class="col-sm-6 col-form-label">Q6: How does this product helps, your target audience? <br> "This product helps you with ........ Verb ending in "ing")" (ex: Mixing food perfectly everytime - Relaxing in long journeys - Protecting your phone)</label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q6" id="q6" placeholder="Ex: Protecting your phone...">
+        <input type="text" class="form-control" name="q6" id="q6" placeholder=" Protecting your phone...">
       </div>
     </div>
 
@@ -73,7 +84,7 @@
     <div class="form-group row">
       <label for="q7" class="col-sm-6 col-form-label">Q7: What is the big pay off / Big benefit of the product audience:<br><small>"With this amazing product you will finally be able to ........ (Verb word)" (ex: Cook to perfection everytime - Relax on journeys - Protect your phone everyday)</small></label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q7" id="q7" placeholder="Ex: Protect your phone everyday...">
+        <input type="text" class="form-control" name="q7" id="q7" placeholder=" Protect your phone everyday...">
       </div>
     </div>
 
@@ -81,7 +92,7 @@
       <label for="q8" class="col-sm-6 col-form-label">Q8: What is your ideal customer's main pressing need:<br><small>"My customer really needs to ........ but can't ........" (ex: Needs to cook better but can't fing the right spoon - Needs to relax on flight but can't due to uncomfortable travelling seats - Needs to protect their phone but can't find the right suitable case)</small>
       </label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q8" id="q8" placeholder="Ex: Needs to protect their phone but can't find the right suitable case...">
+        <input type="text" class="form-control" name="q8" id="q8" placeholder=" Needs to protect their phone but can't find the right suitable case...">
       </div>
     </div>
 
@@ -89,7 +100,7 @@
       <label for="q9" class="col-sm-6 col-form-label">Q9: What negative thing / person or circuntances do the think is against them:<br>"The biggest hurdle you have to overcome is ........"<small> (ex: Cheap spoons that will break easily or don't hold up - Cheap pillows
         that are poorly stiched and don't last - A protective cover that actually looks good)</small></label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q9" id="q9" placeholder="Ex: A protective cover that actually looks good...">
+        <input type="text" class="form-control" name="q9" id="q9" placeholder=" A protective cover that actually looks good...">
       </div>
     </div>
 
@@ -98,14 +109,14 @@
         you will look tired and wont feel your-self - without a protective cover you will eventually break your phone)</small>
       </label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q10" id="q10" placeholder="Ex: You will eventually break your phone...">
+        <input type="text" class="form-control" name="q10" id="q10" placeholder=" You will eventually break your phone...">
       </div>
     </div>
 
     <div class="form-group row">
       <label for="q11" class="col-sm-6 col-form-label">Q11: How does this hurdle hurts them or keeps them from getting the results the want? <br>"This hurdle hurts you because ........"<small> (ex: Yourself and family will be disappointed with the taste of your food - After travelling for a long time you will be tired and wont look yourself - You will break your phone and be mad at yourself after paying a high bill to fixing your broken phone...)</small></label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q11" id="q11" placeholder="Ex: You will be mad at yourself after paying...">
+        <input type="text" class="form-control" name="q11" id="q11" placeholder=" You will be mad at yourself after paying...">
       </div>
     </div>
 
@@ -114,7 +125,7 @@
         support your kneck so you don't need one - Your phone is safe without a cover and you will never drop it)</small>
       </label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q12" id="q12" placeholder="Ex: You will eventually break your phone...">
+        <input type="text" class="form-control" name="q12" id="q12" placeholder=" You will eventually break your phone...">
       </div>
     </div>
 
@@ -124,7 +135,7 @@
       <label for="q13" class="col-sm-6 col-form-label">Q13: What is #1 feature (what it is) of your product?<br><small> (ex: Soft silicon grip
         ergonomic handle that you can use at high tempetures - 100% cotton - liquid silicone)</small></label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q13" id="q13" placeholder="Ex: liquid silicone...">
+        <input type="text" class="form-control" name="q13" id="q13" placeholder=" liquid silicone...">
       </div>
     </div>
 
@@ -132,7 +143,7 @@
       <label for="q14" class="col-sm-6 col-form-label">Q14: What is the benefit (what it does OR means) of the #1 feature above?<br> "With the #1 feature you can ........ (start with a Verb)"<small> (ex: Cook and mix materials to perfection - Relax and enjoy the journey comfortably - enjoy your phone with a full-body drop protecting cover)</small>
       </label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q14" id="q14" placeholder="Ex: Enjoy your phone with a full-body drop protecting cover...">
+        <input type="text" class="form-control" name="q14" id="q14" placeholder=" Enjoy your phone with a full-body drop protecting cover...">
       </div>
     </div>
 
@@ -140,7 +151,7 @@
      <div class="form-group row">
       <label for="q15" class="col-sm-6 col-form-label">Q15: What is #2 feature (what it is) of your product?<br><small> (ex: hygienic utensil - 100% pure memory foam - gell rubber)</small></label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q15" id="q15" placeholder="Ex: gell rubber...">
+        <input type="text" class="form-control" name="q15" id="q15" placeholder=" gell rubber...">
       </div>
     </div>
 
@@ -149,7 +160,7 @@
         and relieves neck pain during travel - provides great grip and traction)</small>
       </label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q16" id="q16" placeholder="Ex: provides great grip and traction...">
+        <input type="text" class="form-control" name="q16" id="q16" placeholder=" provides great grip and traction...">
       </div>
     </div>
 
@@ -157,7 +168,7 @@
     <div class="form-group row">
       <label for="q17" class="col-sm-6 col-form-label">Q17: What is #3 feature (what it is) of your product?<br><small> (ex: Smooth edges - adjustable rope lock - with Qi wireless charging)</small></label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q17" id="q17" placeholder="Ex: with Qi wireless charging...">
+        <input type="text" class="form-control" name="q17" id="q17" placeholder=" with Qi wireless charging...">
       </div>
     </div>
 
@@ -166,7 +177,7 @@
         and the size of the pillow randomly meeting different neck size requirements - saves you the hassle of dealing with those pesky cables)</small>
       </label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q18" id="q18" placeholder="Ex: saves you the hassle of dealing with messy cables...">
+        <input type="text" class="form-control" name="q18" id="q18" placeholder=" saves you the hassle of dealing with messy cables...">
       </div>
     </div>
 
@@ -174,7 +185,7 @@
     <div class="form-group row">
       <label for="q19" class="col-sm-6 col-form-label">Q19: What is #4 feature (what it is) of your product?<br><small> (ex: Solid silicone design - Sweat resistant / washable cover - Smooth layer surface)</small></label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q19" id="q19" placeholder="Ex: Smooth layer surface...">
+        <input type="text" class="form-control" name="q19" id="q19" placeholder=" Smooth layer surface...">
       </div>
     </div>
 
@@ -182,13 +193,13 @@
       <label for="q20" class="col-sm-6 col-form-label">Q20: What is the benefit (what it does OR means) of the #4 feature above?<br> "With the #4 feature you can ........ (start with a Verb)"<small> (ex: won’t harbor bacteria or let you down by melting or warping - provides the maximum comfort on your trip - Feels and looks really good)</small>
       </label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q20" id="q20" placeholder="Ex: Feels and looks really good...">
+        <input type="text" class="form-control" name="q20" id="q20" placeholder=" Feels and looks really good...">
       </div>
     </div>
       <hr>
     <input type="submit" name="listing-submit" class="btn btn-outline-primary" value="Generate"/>
     <button type="submit" class="btn btn-outline-secondary">save</button>
-    <button type="submit" class="btn btn-outline-success">Start Again</button>    
+    <button type="reset" class="btn btn-outline-success">Start Again</button>    
   </form>
 </section>
 
@@ -199,6 +210,7 @@
       <div class="row">
         <div class="col-sm-12 col-md-6">
           <?php
+
             if (isset($_POST['listing-submit'])) {              
               // question 1
               if(!empty($_REQUEST['q1'])) {
@@ -207,7 +219,7 @@
           
               } else {
                 echo '<a href="#q1" class="list-group-item list-group-item-action list-group-item-warning">
-                        Q1 has no input, click here to go there
+                        There is missing information, on the form
                       </a>';
               }
 
@@ -406,7 +418,7 @@
 
           if(!empty($_REQUEST['q1'])) {
      
-            echo '<h4><strong>' . $q1 .' -  ' . $q5 .' '. $q13 . ' '. $q14 . ' - ' . $q15 . ' ' . $q17 . ' to ' . $q7 . '</strong></h4>';
+            echo '<h4><strong>' . $q1 . '</strong> -  ' . $q5 . ' - ' . $q6 . ' - ' . $q17 . ' to ' . $q7 . '</h4>';
 
           } else {
             echo '<a href="#q1" class="list-group-item list-group-item-action list-group-item-warning">
