@@ -132,7 +132,7 @@
     </div>
 
     <div class="form-group row">
-      <label for="q9" class="col-sm-6 col-form-label"><strong>Q9: What negative thing / person or circuntances do the think is against them:</strong> <br>"The biggest hurdle you have to overcome is ........" (ex: Cheap spoons that will break easily or don't hold up - Cheap pillows
+      <label for="q9" class="col-sm-6 col-form-label"><strong>Q9: What negative thing / person or circuntances do the think is against them:</strong> <br>"The biggest hurdle you have to overcome is ........(verb starting with "ing")" (ex: getting cheap spoons that will break easily or don't hold up - Cheap pillows
         that are poorly stiched and don't last - A protective cover that actually looks good)</small></label>
       <div class="col-sm-6">
         <input type="text" class="form-control" name="q9" id="q9" value="<?php echo htmlentities($input9); ?>" placeholder=" A protective cover that actually looks good...">
@@ -282,7 +282,7 @@
               // question 4
               if(!empty($_REQUEST['q4'])) {
                 $q4 = $_REQUEST['q4'];    
-                echo '<a href="#q4" class="list-group-item list-group-item-action list-group-item-primary">Q4 <strong>Target Audience (PLURAR): </strong> '.$q3.'</a>';
+                echo '<a href="#q4" class="list-group-item list-group-item-action list-group-item-primary">Q4 <strong>Target Audience (PLURAR): </strong> '.$q4.'</a>';
           
               } else {
                 echo '<a href="#q4" class="list-group-item list-group-item-action list-group-item-warning">Q4 has no input, click here to go there</a>';
@@ -482,14 +482,14 @@
           if(!empty($_REQUEST['q13']) && !empty($_REQUEST['q14'])) {
 
             // words Emotional State: Urgency 
-            $input = array("Simply Magical", "Most Important", "Remarkable Features", "Its Revolutionary", "Clearly Sensational", "a trustworthy bodyguard", "Jackpot", "Instant Savings", "High quality", "Magical", "Never Missing Out", "Left behind", "Magnificent", "Miracle", "very Profitable", "Proven", "quick steps", "Fast Results", "Safe in mind", "Save", "Sensational", "Startling new", "Superb", "Superior", "Tremendous", "Truly", "Worthwhile", "Never Limited", "bargain", "Skyrocket");
+            $input = array("Simply Magical", "Most Important", "Remarkable Features", "Its Revolutionary", "Clearly Sensational", "a trustworthy bodyguard", "Jackpot", "Instant Savings", "High quality", "Magical", "Never Missing Out", "Magnificent", "Miracle", "very Profitable", "Proven", "quick steps", "Fast Results", "Safe in mind", "Save", "Sensational", "Startling new", "Superb", "Superior", "Tremendous", "Truly", "Worthwhile", "Never Limited", "bargain", "Skyrocket");
             $rand_keys = array_rand($input, 4);
             $rand_one = $input[$rand_keys[0]] . "\n";
             $rand_two = $input[$rand_keys[1]] . "\n";
             $rand_three = $input[$rand_keys[2]] . "\n";
             $rand_four = $input[$rand_keys[3]] . "\n";
             
-            echo '<h4 class="bullet-title"><strong>' . $rand_one . '-</strong><span id="bullet-text"> ' . $q13 . '<strong> which means </strong> ' . $q14 . '<strong> - safe</strong></span></h4>';
+            echo '<h4 class="bullet-title"><strong>' . $rand_one . '-</strong><span id="bullet-text"> ' . $q13 . '<strong> it helps </strong> ' . $q14 . '<strong> - safe</strong></span></h4>';
       
           } else {
             echo '<a href="#q13" class="list-group-item list-group-item-action list-group-item-warning">
@@ -498,7 +498,7 @@
           }
 
           if(!empty($_REQUEST['q15']) && !empty($_REQUEST['q16'])) {             
-            echo '<h4 class="bullet-title mt-5"><strong>' .  $rand_two .' -</strong><span id="bullet-text"> ' . $q15 . '<strong> which means </strong> ' . $q16 . '<strong> - easily</strong></span></h4>';
+            echo '<h4 class="bullet-title mt-5"><strong>' .  $rand_two .' -</strong><span id="bullet-text"> ' . $q15 . '<strong> to </strong> ' . $q16 . '<strong> - easily</strong></span></h4>';
       
           } else {
             echo '<a href="#q14" class="list-group-item list-group-item-action list-group-item-warning">
@@ -507,7 +507,7 @@
           }
 
           if(!empty($_REQUEST['q17']) && !empty($_REQUEST['q18'])) {             
-            echo '<h4 class="bullet-title mt-5"><strong>' .  $rand_three .' -</strong><span id="bullet-text"> ' . $q17 . '<strong> which means </strong> ' . $q18 . '<strong> - helpful</strong></span></h4>';
+            echo '<h4 class="bullet-title mt-5"><strong>' .  $rand_three .' -</strong><span id="bullet-text"> ' . $q17 . '<strong> helps to </strong> ' . $q18 . '<strong> - helpful</strong></span></h4>';
       
           } else {
             echo '<a href="#q17" class="list-group-item list-group-item-action list-group-item-warning">
@@ -516,7 +516,7 @@
           }
 
           if(!empty($_REQUEST['q18']) && !empty($_REQUEST['q19'])) {             
-            echo '<h4 class="bullet-title mt-5"><strong>' .  $rand_four .' -</strong><span id="bullet-text"> ' . $q19 . '<strong> which means</strong> ' . $q20 . '<strong> - Delightful</strong></span></h4>';
+            echo '<h4 class="bullet-title mt-5"><strong>' .  $rand_four .' -</strong><span id="bullet-text"> ' . $q19 . '<strong> which </strong> ' . $q20 . '<strong> - Delightful</strong></span></h4>';
       
           } else {
             echo '<a href="#q18" class="list-group-item list-group-item-action list-group-item-warning">
@@ -543,13 +543,13 @@
             echo `<h2>Description</h2>`;
 
             if(!empty($_REQUEST['q11'])) {             
-              echo '<h4 class="mb-4">' . $q1 . ' is for every ' . $q3 .' who has been looking for a ' . $q5 . ' but cant ' . $q9 . '.</h4>';
+              echo '<h4 class="mb-4"><span class="underline-text" data-container="body" data-toggle="popover" data-placement="top" data-content="Q1: Name of the product">' . $q1 . '</span> is for <span class="underline-text" data-container="body" data-toggle="popover" data-placement="top" data-content="Q3: Target audience (singular)">' . $q3 .'</span> who has been looking for a ' . '<span class="underline-text" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Q5: Keyword Theme">' . $q5 . '</span>' . ' but <span class="underline-text" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Q9: Negative thing">' . $q9 . '</span> is difficult.</h4>';
 
-              echo '<h4>' . $q10 . ' but ' . $q11  . '. What make this even worst is that you want' . $q8 . '<h4>';
-              echo '<h4 class="mb-4">What is worst, ' . $q12 . '.</h4>';
-              echo '<h4 class="mb-4">All of this can make ' . $q7 . 'a difficult this to do. But luckly for you there is a solution</h4>';
-              echo '<h4 class="mb-4">So if you are an ' . $q3 . ' who really wants to ' . $q8 . ' but cant ' . $q9 . $q1 . ' is the answer you are looking for!</h4>';
-              echo '<h4><strong>Satisfaction Guarantee:</strong> We believe in simplifying great products! Our ' . $q1 . ' is great for all, ' . $q4 . '. But if for any reason this ' . $q2 .  ' does not meet your expectations just use our no questions asked money back guarantee.<strong> So add to cart now!</strong></h4>';
+              echo '<h4><span class="underline-text" data-container="body" data-toggle="popover" data-placement="top" data-content="Q10: WHY this hurdle is a big deal">' . $q10 . '</span> and <span class="underline-text" data-container="body" data-toggle="popover" data-placement="top" data-content="Q11: WHY this hurdle hurts...">' . $q11  . '</span>. What make this even worst is that you want ' . $q8 . '<h4>';
+              echo '<h4 class="mb-4">What is worst, is that many companies push you to think that ' . $q12 . '.</h4>';
+              echo '<h4 class="mb-4">All of this can make buying a ' . $q2 . ' That can help to ' . $q7 . ' a difficult this to do. But luckly for you there is a solution!</h4>';
+              echo '<h4 class="mb-4">So if you are a ' . $q4 . ' who really wants to ' . $q8 . $q1 . ' is the answer you are looking for!</h4>';
+              echo '<h4><strong>Satisfaction Guarantee:</strong> We believe in simplifying great products! Our ' . $q1 . ' is great for all, ' . $q4 . '. But if for any reason this ' . $q2 .  ' does not meet your expectations just use our no questions asked money back guarantee.<strong> So Add to Cart Now!</strong></h4>';
         
             } else {
               echo '<a href="#q13" class="list-group-item list-group-item-action list-group-item-warning">
@@ -563,4 +563,15 @@
   </div>
  </section>
 
+
+
+<?php
+  require "footer.php";
+?>
+
+<script>
+ $(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</script>
 

@@ -11,6 +11,15 @@
   margin-top: 60px;
 }
 
+.underline-text {
+  color: #000;
+  cursor: pointer !important;
+}
+.underline-text:hover {
+  background-color: rgb(255, 246, 125);
+  transition: all 0.3s;
+}
+
 /* AMAZON LISTING LANDING PAGE */
 /* GLOBAL STYLES
 -------------------------------------------------- */
@@ -70,8 +79,6 @@ li {
 .main-section {
   margin-top: 60px;
 }
-
-
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
