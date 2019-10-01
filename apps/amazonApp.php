@@ -1,7 +1,7 @@
 
 <section class="container bg-light p-5 shadow-sm rounded">
     <h1 class="text-center mt-5 listing-app my-5 display-4">The World's Most Powerfull Amazon Listing Generator</h1>
-    <h3 class="mt-5">Instantly craft a killer title - bullet points - Description for your amazon products</h3>
+    <h3 class="mt-5 lead">Instantly craft a killer title - bullet points - Description for your amazon products</h3>
   <div class="row">
     <div class="col-sm-8">
       
@@ -66,9 +66,9 @@
   <!-- ABOUT THE PRODUCT -->
   <h2 class="my-5 text-primary">About The Product</h2>
     <div class="form-group row">
-      <label for="q1" class="col-sm-6 col-form-label"><strong>Q1: Name of the product: (Include the name brand last) 1. What is the name of the product your are selling. 2. Start with the main keyword.</strong><br>(Ex: Kitchen Wooden Spoon 6 set - Cotton Flight Pillow - Iphone Cover)</label>
+      <label for="q1" class="col-sm-6 col-form-label"><strong>Q1: Name of the product: 1. What is the name of the product you are selling. </strong><br>(Ex: Kitchen Wooden Spoon 6 set - Cotton Flight Pillow - Iphone Cover)</label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q1" id="q1" value="<?php echo htmlentities($input1); ?>" placeholder=" Kitchen Wooden Spoon 6 set">
+        <input type="text" class="form-control" name="q1" id="q1" value="<?php echo htmlentities($input1); ?>" placeholder=" The product name is...">
       </div>
     </div>
 
@@ -102,7 +102,7 @@
     <div class="form-group row">
       <label for="q5" class="col-sm-6 col-form-label"><strong>Q5: In 2 to 3 words: What are the main area of focus for this product? </strong> <br> (ex: Cook faster - Helps you relax - Iphone protection)</label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q5" id="q5" value="<?php echo htmlentities($input5); ?>" placeholder=" Save from smashing...">
+        <input type="text" class="form-control" name="q5" id="q5" value="<?php echo htmlentities($input5); ?>" placeholder="Sport - Cooking - Beauty">
       </div>
     </div>
 
@@ -127,7 +127,7 @@
       <label for="q8" class="col-sm-6 col-form-label"><strong>Q8: What is your ideal customer's main pressing need: </strong> <br>"My customer really needs to ........ but can't ........" (ex: Needs to cook better but can't fing the right spoon - Needs to relax on flight but can't due to uncomfortable travelling seats - Needs to protect their phone but can't find the right suitable case)</small>
       </label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q8" id="q8" value="<?php echo htmlentities($input8); ?>" placeholder=" Needs to protect their phone but can't find the right suitable case...">
+        <input type="text" class="form-control" name="q8" id="q8" value="<?php echo htmlentities($input8); ?>" placeholder=" Protect their...">
       </div>
     </div>
 
@@ -144,7 +144,7 @@
         you will look tired and wont feel your-self - without a protective cover you will eventually break your phone)</small>
       </label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q10" id="q10" value="<?php echo htmlentities($input10); ?>" placeholder=" You will eventually break your phone...">
+        <input type="text" class="form-control" name="q10" id="q10" value="<?php echo htmlentities($input10); ?>" placeholder=" Without...">
       </div>
     </div>
 
@@ -176,7 +176,7 @@
     </div>
 
     <div class="form-group row">
-      <label for="q14" class="col-sm-6 col-form-label"><strong>Q14: What is the benefit (what it does OR means) of the #1 feature above? </strong> <br> "With the #1 feature you can ........ (start with a Verb)" (ex: Cook and mix materials to perfection - Relax and enjoy the journey comfortably - enjoy your phone with a full-body drop protecting cover)</small>
+      <label for="q14" class="col-sm-6 col-form-label"><strong>Q14: What is the benefit (what it does OR means) of the #1 feature above? </strong> <br> "With the #1 it helps ........ (start with a Verb)" (ex: Cook and mix materials to perfection - Relax and enjoy the journey comfortably - enjoy your phone with a full-body drop protecting cover)</small>
       </label>
       <div class="col-sm-6">
         <input type="text" class="form-control" name="q14" id="q14" value="<?php echo htmlentities($input14); ?>" placeholder=" Enjoy your phone with a full-body drop protecting cover...">
@@ -209,11 +209,11 @@
     </div>
 
     <div class="form-group row">
-      <label for="q18" class="col-sm-6 col-form-label"><strong>Q18: What is the benefit (what it does OR means) of the #3 feature above? </strong> <br> "With the #3 feature you can ........ (start with a Verb)" (ex: Won’t scratch any parts of your kitchen - you can adjust the angle
+      <label for="q18" class="col-sm-6 col-form-label"><strong>Q18: What is the benefit (what it does OR means) of the #3 feature above? </strong> <br> "With the #3 help you with........ (start with a Verb)" (ex: Won’t scratch any parts of your kitchen - you can adjust the angle
         and the size of the pillow randomly meeting different neck size requirements - saves you the hassle of dealing with those pesky cables)</small>
       </label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="q18" id="q18" value="<?php echo htmlentities($input18); ?>" placeholder=" saves you the hassle of dealing with messy cables...">
+        <input type="text" class="form-control" name="q18" id="q18" value="<?php echo htmlentities($input18); ?>" placeholder=" dealing with messy cables...">
       </div>
     </div>
 
@@ -237,13 +237,13 @@
       <!-- BUTTONS -->
     <input type="submit" name="listing-submit" class="btn btn-outline-primary" value="Generate"/>
     <button type="submit" class="btn btn-outline-secondary">Start Again</button>
-    <!-- <button type="reset" class="btn btn-outline-success">Save</button>     -->
+    
   </form>
 </section>
 
 <section class="form-results mt-5 p-5 container rounded shadow-sm bg-light">  
   <div class="input-results ">
-    <h2 class="mb-4">Final steps: Browse through the results below, edit and use where is nessesary</h2>
+    <h2 class="pb-5 lead">Final steps: Browse through the results below, edit and use where is nessesary</h2>
     <div class="list-group">
       <div class="row">
         <div class="col-sm-12 col-md-6">
@@ -336,7 +336,7 @@
               // question 10
               if(!empty($_REQUEST['q10'])) {
                 $q10 = $_REQUEST['q10'];    
-                echo '<a href="#q10" class="list-group-item list-group-item-action list-group-item-primary">Q10 <strong>WHY this hurdle is such a big deal  : </strong> '.$q10.'</a>';
+                echo '<a href="#q10" class="list-group-item list-group-item-action list-group-item-primary">Q10 <strong>WHY this issue is such a big deal  : </strong> '.$q10.'</a>';
           
               } else {
                 echo '<a href="#q10" class="list-group-item list-group-item-action list-group-item-warning">Q10 has no input, click here to go there</a>';
@@ -351,7 +351,7 @@
               // question 11
               if(!empty($_REQUEST['q11'])) {
                 $q11 = $_REQUEST['q11'];    
-                echo '<a href="#q11" class="list-group-item list-group-item-action list-group-item-primary"> Q11 <strong>HOW does this hurdle hurt them from getting results they want?</strong> '.$q11.'</a>';          
+                echo '<a href="#q11" class="list-group-item list-group-item-action list-group-item-primary"> Q11 <strong>HOW does this issue hurt them from getting results they want?</strong> '.$q11.'</a>';          
               } else {
                 echo '<a href="#q11" class="list-group-item list-group-item-action list-group-item-warning">
                         Q11 has no input, click here to go there
@@ -447,37 +447,28 @@
 </section>
 
 <!-- BULLET TITTLE -->
-<section class="title-result">
-  <div class="container rounded">
-    <div class="shadow-sm p-5">
-      <?php
-        if (isset($_POST['listing-submit'])) {
-          echo '<h2 class="my-5">The title</h2>';
+<section class="title-result mt-5 p-5 container rounded shadow-sm bg-light">
+  <?php
+    if (isset($_POST['listing-submit'])) {
+      echo '<h2 class="my-5 text-primary">The title</h2>';
 
-          if(!empty($_REQUEST['q1'])) {
-     
-            echo '<h4><strong>' . $q1 . '</strong> -  ' . $q5 . ' - ' . $q6 . ' - ' . $q17 . ' to ' . $q7 . '</h4>';
+      if(!empty($_REQUEST['q1'])) {
+  
+        echo '<h4><strong>' . $q1 . '</strong> -  ' . $q5 . ' - ' . $q6 . ' - ' . $q17 . ' to ' . $q7 . '</h4>';
 
-          } else {
-            echo '<a href="#q1" class="list-group-item list-group-item-action list-group-item-warning">
-                    Q1 has no input, click here to go there
-                  </a>';
-          }
-        }
-      ?>
-
-    </div>    
-  </div>
+      } else {
+        echo '<a href="#q1" class="list-group-item list-group-item-action list-group-item-warning">
+                Q1 has no input, click here to go there
+              </a>';
+      }
+    }
+  ?> 
 
   <!-- BULLET POINTS -->
-  <div class="container rounded">
-    <div class="shadow-sm p-5">
+  <div class="p-4">    
       <?php
-
-          
-
         if (isset($_POST['listing-submit'])) {
-          echo '<h2 class="my-5">The bullet points</h2>';
+          echo '<h2 class="my-5 text-primary">The bullet points</h2>';
 
           if(!empty($_REQUEST['q13']) && !empty($_REQUEST['q14'])) {
 
@@ -525,49 +516,37 @@
           }
         }
       ?>
-
-     
-      
-
-    </div>
   </div>  
 </section>
 
  <!-- DESCRIPTION -->
- <section class="section-description">
-  <div class="container rounded">
-    <div class="shadow-sm p-5">
-    
-        <?php
-          if (isset($_POST['listing-submit'])) {
-            echo `<h2>Description</h2>`;
+ <section class="section-description mt-5 p-5 container rounded shadow-sm bg-light">
 
-            if(!empty($_REQUEST['q11'])) {             
-              echo '<h4 class="mb-4"><span class="underline-text" data-container="body" data-toggle="popover" data-placement="top" data-content="Q1: Name of the product">' . $q1 . '</span> is for <span class="underline-text" data-container="body" data-toggle="popover" data-placement="top" data-content="Q3: Target audience (singular)">' . $q3 .'</span> who has been looking for a ' . '<span class="underline-text" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Q5: Keyword Theme">' . $q5 . '</span>' . ' but <span class="underline-text" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Q9: Negative thing">' . $q9 . '</span> is difficult.</h4>';
+  <div class="p-5">  
+      <?php
+        if (isset($_POST['listing-submit'])) {
+          echo '<h2 class="my-5 text-primary">Description</h2>';
 
-              echo '<h4><span class="underline-text" data-container="body" data-toggle="popover" data-placement="top" data-content="Q10: WHY this hurdle is a big deal">' . $q10 . '</span> and <span class="underline-text" data-container="body" data-toggle="popover" data-placement="top" data-content="Q11: WHY this hurdle hurts...">' . $q11  . '</span>. What make this even worst is that you want ' . $q8 . '<h4>';
-              echo '<h4 class="mb-4">What is worst, is that many companies push you to think that ' . $q12 . '.</h4>';
-              echo '<h4 class="mb-4">All of this can make buying a ' . $q2 . ' That can help to ' . $q7 . ' a difficult this to do. But luckly for you there is a solution!</h4>';
-              echo '<h4 class="mb-4">So if you are a ' . $q4 . ' who really wants to ' . $q8 . $q1 . ' is the answer you are looking for!</h4>';
-              echo '<h4><strong>Satisfaction Guarantee:</strong> We believe in simplifying great products! Our ' . $q1 . ' is great for all, ' . $q4 . '. But if for any reason this ' . $q2 .  ' does not meet your expectations just use our no questions asked money back guarantee.<strong> So Add to Cart Now!</strong></h4>';
-        
-            } else {
-              echo '<a href="#q13" class="list-group-item list-group-item-action list-group-item-warning">
-                      Q1 has no input, click here to go there
-                    </a>';
-            }
+          if(!empty($_REQUEST['q11'])) {             
+            echo '<h4 class="mb-4"><span class="mongod" data-container="body" data-toggle="popover" data-placement="top" data-content="Q1: Name of the product">' . $q1 . '</span> is for <span class="mongod" data-container="body" data-toggle="popover" data-placement="top" data-content="Q3: Target audience (singular)">' . $q3 .'</span> who has been looking to ' . '<span class="mongod" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Q5: Keyword Theme">' . $q5 . '</span>' . ' but <span class="mongod" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Q9: Negative thing">' . $q9 . '</span> is difficult.</h4>';
 
+            echo '<h4><span class="mongod" data-container="body" data-toggle="popover" data-placement="top" data-content="Q10: WHY this hurdle is a big deal">' . $q10 . '</span> and <span class="mongod" data-container="body" data-toggle="popover" data-placement="top" data-content="Q11: WHY this hurdle hurts...">' . $q11  . '</span>. What make this even worst is that you want ' . $q8 . '<h4>';
+            echo '<h4 class="mb-4">What is worst, is that many companies push you to think that ' . $q12 . '.</h4>';
+            echo '<h4 class="mb-4">All of this can make buying a ' . $q2 . ' That can help to ' . $q7 . ' a difficult this to do. But luckly for you there is a solution!</h4>';
+            echo '<h4 class="mb-4">So if you are ' . $q4 . ' who really wants to ' . $q8 . $q1 . ' is the answer you are looking for!</h4>';
+            echo '<h4><strong>Satisfaction Guarantee:</strong> We believe in simplifying great products! Our ' . $q1 . ' is great for all, ' . $q4 . '. But if for any reason this ' . $q2 .  ' does not meet your expectations just use our no questions asked money back guarantee.<strong> So Add to Cart Now!</strong></h4>';
+      
+          } else {
+            echo '<a href="#q13" class="list-group-item list-group-item-action list-group-item-warning">
+                    Q1 has no input, click here to go there
+                  </a>';
           }
-        ?>
-    </div>
+
+        }
+      ?>
   </div>
+
  </section>
-
-
-
-<?php
-  require "footer.php";
-?>
 
 <script>
  $(function () {
