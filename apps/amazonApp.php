@@ -149,7 +149,7 @@
     </div>
 
     <div class="form-group row">
-      <label for="q11" class="col-sm-6 col-form-label"><strong>Q11: How does this hurdle hurts them or keeps them from getting the results the want?</strong> <br>"This hurdle hurts you because ........" (ex: Yourself and family will be disappointed with the taste of your food - After travelling for a long time you will be tired and wont look yourself - You will break your phone and be mad at yourself after paying a high bill to fixing your broken phone...)</small></label>
+      <label for="q11" class="col-sm-6 col-form-label"><strong>Q11: How does this hurdle hurts them or keeps them from getting the results the want?</strong> <br>"This hurdle hurts you because you........" (ex: Don't want yourself and family be disappointed with the taste of your food - After travelling for a long time you will be tired and wont look yourself - You will break your phone and be mad at yourself after paying a high bill to fixing your broken phone...)</small></label>
       <div class="col-sm-6">
         <input type="text" class="form-control" name="q11" id="q11" value="<?php echo htmlentities($input11); ?>" placeholder=" You will be mad at yourself after paying...">
       </div>
@@ -507,7 +507,7 @@
           }
 
           if(!empty($_REQUEST['q18']) && !empty($_REQUEST['q19'])) {             
-            echo '<h4 class="bullet-title mt-5"><strong>' .  $rand_four .' -</strong><span id="bullet-text"> ' . $q19 . '<strong> which </strong> ' . $q20 . '<strong> - Delightful</strong></span></h4>';
+            echo '<h4 class="bullet-title mt-5"><strong>' .  $rand_four .' -</strong><span id="bullet-text"> ' . $q19 . '<strong> which means </strong> ' . $q20 . '<strong> - Delightful</strong></span></h4>';
       
           } else {
             echo '<a href="#q18" class="list-group-item list-group-item-action list-group-item-warning">
@@ -530,11 +530,11 @@
           if(!empty($_REQUEST['q11'])) {             
             echo '<h4 class="mb-4"><span class="mongod" data-container="body" data-toggle="popover" data-placement="top" data-content="Q1: Name of the product">' . $q1 . '</span> is for <span class="mongod" data-container="body" data-toggle="popover" data-placement="top" data-content="Q3: Target audience (singular)">' . $q3 .'</span> who has been looking to ' . '<span class="mongod" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Q5: Keyword Theme">' . $q5 . '</span>' . ' but <span class="mongod" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Q9: Negative thing">' . $q9 . '</span> is difficult.</h4>';
 
-            echo '<h4><span class="mongod" data-container="body" data-toggle="popover" data-placement="top" data-content="Q10: WHY this hurdle is a big deal">' . $q10 . '</span> and <span class="mongod" data-container="body" data-toggle="popover" data-placement="top" data-content="Q11: WHY this hurdle hurts...">' . $q11  . '</span>. What make this even worst is that you want ' . $q8 . '<h4>';
+            echo '<h4><span class="mongod" data-container="body" data-toggle="popover" data-placement="top" data-content="Q10: WHY this hurdle is a big deal">' . $q10 . '</span> and <span class="mongod" data-container="body" data-toggle="popover" data-placement="top" data-content="Q11: WHY this hurdle hurts...">' . $q11  . '</span>. What make this even worst is that you really want to ' . $q8 . '<h4>';
             echo '<h4 class="mb-4">What is worst, is that many companies push you to think that ' . $q12 . '.</h4>';
             echo '<h4 class="mb-4">All of this can make buying a ' . $q2 . ' That can help to ' . $q7 . ' a difficult this to do. But luckly for you there is a solution!</h4>';
             echo '<h4 class="mb-4">So if you are ' . $q4 . ' who really wants to ' . $q8 . $q1 . ' is the answer you are looking for!</h4>';
-            echo '<h4><strong>Satisfaction Guarantee:</strong> We believe in simplifying great products! Our ' . $q1 . ' is great for all, ' . $q4 . '. But if for any reason this ' . $q2 .  ' does not meet your expectations just use our no questions asked money back guarantee.<strong> So Add to Cart Now!</strong></h4>';
+            echo '<h4><strong>Satisfaction Guarantee:</strong> We believe in simplifying great products! Our ' . $q1 . ' is great for all. But if for any reason this ' . $q2 .  ' does not meet your expectations just use our no questions asked money back guarantee.<strong> So Add to Cart Now!</strong></h4>';
       
           } else {
             echo '<a href="#q13" class="list-group-item list-group-item-action list-group-item-warning">
